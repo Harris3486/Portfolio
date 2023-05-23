@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link href="StyleSheet.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<div class="content">
+    <h title="Harris' website"> <center> Harris Mohammad </center> </h>
+    <div class="header" style="text-align:center;" id="myHeader">
+        <h2 style="word-spacing: 35px;"><a href="#projects">Projects</a> <a href="#resume">Resume</a> <a href="#about">About/Contact</a> </h2>
+    </div>
+
+    <div>
+        <div class="container">
+            <img src="pixel beach.jpg" alt="banner photo" width=900px height=400px >
+            <div class="centered"><h4 id="projects">Projects</h4></div>
+        </div>
+        <div class="center">
+            <h3> Project 1 - Python NBA Top 75 Trivia </h3>
+            <p style="text-align: center;">
+                Overview - Single question, randomized trivia about the top 75 players in the NBA all-time list.
+            </p>
+            <div class="container">
+                <img src="trivia.jpg" alt="Python Trivia" >
+            </div>
+            <p style="text-align: center;">
+                I wanted to create a trivia containing one question, that can have different answers each loop.
+                I thought to use the list of the top 75 players, and display two types of information to the
+                user: the amount of points scored by a specific player, and the teams they have played for.
+                After doing this 5 times, the loop ends and shows the user how many they got correct out of 5.
+                During the loop, if a user gets a question wrong, it will display who the correct player is.
+                The user can also type in lowercase, or uppercase.
+            </p>
+        </div>
+        <img src="trivia console.jpg" alt="Python console" style="margin-left: 250px;" width="1352" height="242" >
+        <h3> Project 2 - Python Spotify Data Analysis </h3>
+        <div class="center">
+            <p> Overview - Analyzing Spotify personal data using Pandas and Matplotib. To obtain streaming history, download
+                personal data from Spotify USA Inc. Analysis of data pertaining to singular artist, in this case
+                Mac Miller and my personal data. NOTE: My personal data is not uploaded in my repository on Github. You
+                will have to download your own data by reaching out to Spotify to request your data. </p>
+            <div class="container">
+                <img src="spotify.jpg" alt="Spotify Python Code" >
+            </div>
+            <p> I analyzed my data pertaining to music I listened to, but specifically Mac Miller music. I chose this
+                artist because I often listen to him. I was able to produce to different graphs.
+            </p>
+        </div>
+        <div class ="center">
+                    <img src="spotify chart 2.png" alt="Spotify Data" style="width:90%">
+                        <figcaption style="text-align: center;"><i>Mac Miller songs listened to by day, Mon-Sun</i></figcaption>
+                    <img src="spotify chart 1.png" alt="Spotify Data" style="width:90%">
+                        <figcaption style="text-align: center;"><i>Mac Miller songs listened to by hour, AM-PM</i></figcaption>
+
+        </div>
+        <div class="center">
+        <p>The first chart of the top pertains to the frequency of Mac Miller songs I listened to each day. On Tuesday's
+        and Fridays I listened more often. The second chart on the bottom pertains to the frequency of Mac Miller songs I
+        listened to by hour. It makes sense that I didn't listen to music much from 3 AM - 7 AM. I listened the most at
+        12PM, and often from 9PM-11PM. This project helped me learn how to display data in a visual way, and
+        how to obtain specific information from data.</p>
+        <h3 id="resume"> Project 3 - HTML Create a website! </h3>
+        <p> Learning HTML to display my new projects, resume, and document my Python journey with my friend Ashley is a
+        great way to show off our skills! I started to learn HTML to make this website you are reading from right now. If
+        you wish to see how my HTML works, right-click on the page and click "View Page Source"</p>
+        </div>
+        <h2> <center> Resume </center></h2>
+        <img src="Harris Mohammad Resume 2023.jpg" alt="Harris Mohammad's Resume" class="center2resume" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="0,0,2550,3300" alt="Computer" href="https://drive.google.com/file/d/1oU0HzXRZa4dEQ7aCHvYQBTLysCvrK04U/view?usp=sharing" target="_blank">
+        </map>
+        <h2 id="about"> <center> About/Contact </center></h2>
+        <div class="center">
+            <p> Welcome to my first website! My name is Harris Mohammad. I wanted to keep learning after undergrad, so my friend
+                Ashley and I started learning Python amd HTML. We update each other on our progress on projects, or new ideas
+                we are learning. You can see some of the progress I've made as I have been learning with Ashley. Check out my
+                projects, my resume, or the HTML source code! Also check out my <a href="https://github.com/Harris3486" target="_blank">Github!</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="center">
+  <p2>Author: Harris Mohammad<br>
+  </p2>
+    </div>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
